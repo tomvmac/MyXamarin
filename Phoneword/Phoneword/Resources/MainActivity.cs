@@ -25,6 +25,7 @@ namespace Phoneword
 			EditText phoneNumberText = FindViewById<EditText>(Resource.Id.PhoneNumberText);
 			Button translateButton = FindViewById<Button>(Resource.Id.TranslateButton);
 			Button callButton = FindViewById<Button>(Resource.Id.CallButton);
+			Button resetButton = FindViewById<Button> (Resource.Id.ResetButton);
 
 			// Disable the "Call" button
 			callButton.Enabled = false;
@@ -32,6 +33,10 @@ namespace Phoneword
 			// Add code to translate number
 			string translatedNumber = string.Empty;
 
+			resetButton.Click += (object sender, EventArgs e) =>
+			{
+				phoneNumberText.Text = "";
+			};
 
 			translateButton.Click += (object sender, EventArgs e) =>
 			{
@@ -41,6 +46,16 @@ namespace Phoneword
 				{
 					callButton.Text = "Call";
 					callButton.Enabled = false;
+
+					// Alert user to that an invalid phoneword was entered 
+					var invalidInputDialog = new AlertDialog.Builder(this);
+					invalidInputDialog.SetMessage("An invalid phone word of " + phoneNumberText.Text + " was entered. Please try again.");
+					invalidInputDialog.SetNeutralButton("Ok", delegate { });
+					invalidInputDialog.SetNegativeButton("Cancel", delegate { });
+
+					// Show the alert dialog to the user and wait for response.
+					invalidInputDialog.Show();
+
 				}
 				else
 				{
