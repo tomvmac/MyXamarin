@@ -16,8 +16,9 @@ public final class R {
     }
     public static final class id {
         public static final int CallButton=0x7f060003;
+        public static final int CallHistoryButton=0x7f060004;
         public static final int PhoneNumberText=0x7f060001;
-        public static final int ResetButton=0x7f060004;
+        public static final int ResetButton=0x7f060005;
         public static final int TranslateButton=0x7f060002;
         public static final int textView1=0x7f060000;
     }
@@ -26,6 +27,7 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040001;
+        public static final int callHistory=0x7f040002;
         public static final int hello=0x7f040000;
     }
     public static final class style {

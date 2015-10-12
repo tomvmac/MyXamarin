@@ -49,6 +49,7 @@
     <Compile Include="Resources\MainActivity.cs">
       <DependentUpon>AboutResources.txt</DependentUpon>
     </Compile>
+    <Compile Include="CallHistoryActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
