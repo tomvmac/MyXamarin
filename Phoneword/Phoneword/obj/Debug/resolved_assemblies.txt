@@ -1,6 +1,6 @@
-C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\assemblies\Phoneword.dll
-C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\assemblies\Mono.Android.dll
-C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\assemblies\mscorlib.dll
-C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\assemblies\System.Core.dll
-C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\assemblies\System.dll
-C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\assemblies\System.Xml.dll
+C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\android\assets\Phoneword.dll
+C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\android\assets\Mono.Android.dll
+C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\android\assets\mscorlib.dll
+C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\android\assets\System.Core.dll
+C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\android\assets\System.dll
+C:\projects\MyXamarin\Phoneword\Phoneword\obj\Debug\android\assets\System.Xml.dll
