@@ -1,0 +1,6 @@
+C:\projects\MyXamarin\TextToSpeech\TextToSpeech\obj\Debug\assemblies\TextToSpeech.dll
+C:\projects\MyXamarin\TextToSpeech\TextToSpeech\obj\Debug\assemblies\Mono.Android.dll
+C:\projects\MyXamarin\TextToSpeech\TextToSpeech\obj\Debug\assemblies\mscorlib.dll
+C:\projects\MyXamarin\TextToSpeech\TextToSpeech\obj\Debug\assemblies\System.Core.dll
+C:\projects\MyXamarin\TextToSpeech\TextToSpeech\obj\Debug\assemblies\System.dll
+C:\projects\MyXamarin\TextToSpeech\TextToSpeech\obj\Debug\assemblies\System.Xml.dll

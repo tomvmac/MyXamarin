@@ -1,8 +1,8 @@
 ﻿<Properties StartupItem="Phoneword\Phoneword.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.Nexus 5 (Lollipop)" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Phoneword\Properties\AssemblyInfo.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Phoneword\Resources\MainActivity.cs">
     <Files>
-      <File FileName="Phoneword\Resources\MainActivity.cs" Line="47" Column="31" />
+      <File FileName="Phoneword\Resources\MainActivity.cs" Line="51" Column="4" />
       <File FileName="Phoneword\Properties\AssemblyInfo.cs" Line="9" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>

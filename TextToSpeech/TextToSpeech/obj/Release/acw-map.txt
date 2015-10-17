@@ -1,0 +1,4 @@
+TextToSpeechDemo.MainActivity, TextToSpeech;md5372099fa9937ad04d8400b4bbfbec8a8.MainActivity
+TextToSpeechDemo.MainActivity, TextToSpeech, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5372099fa9937ad04d8400b4bbfbec8a8.MainActivity
+TextToSpeechDemo.MainActivity;md5372099fa9937ad04d8400b4bbfbec8a8.MainActivity
+texttospeechdemo.MainActivity;md5372099fa9937ad04d8400b4bbfbec8a8.MainActivity
