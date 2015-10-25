@@ -19,7 +19,18 @@ namespace TextToSpeechDemo
         private readonly int MyCheckCode = 101, NeedLang = 103;
         Java.Util.Locale lang;
 
-        protected override void OnCreate(Bundle bundle)
+		public void alertDebug(String msg)
+		{
+			// Alert user to that an invalid phoneword was entered 
+			var myAlert = new AlertDialog.Builder(this);
+			myAlert.SetMessage(msg);
+			myAlert.SetNeutralButton("Ok", delegate { });
+			myAlert.SetNegativeButton("Cancel", delegate { });
+			myAlert.Show();
+
+		}
+
+		protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
 
@@ -52,9 +63,10 @@ namespace TextToSpeechDemo
             // third parameter is the speech engine to use
             textToSpeech = new TextToSpeech(this, this, "com.google.android.tts");
 
+
             // set up the langauge spinner
             // set the top option to be default
-			var langAvailable = new List<string>{ "Default", "Locale.US", "Locale.UK" };
+			var langAvailable = new List<string>{ "Locale.Uk", "Locale.Us", "Locale.English" };
 
             // our spinner only wants to contain the languages supported by the tts and ignore the rest
             var localesAvailable = Java.Util.Locale.GetAvailableLocales().ToList();
@@ -82,8 +94,8 @@ namespace TextToSpeechDemo
 
             // set up the speech to use the default langauge
             // if a language is not available, then the default language is used.
-            lang = Java.Util.Locale.Default;
-            textToSpeech.SetLanguage(lang);
+			lang = Java.Util.Locale.English;
+			textToSpeech.SetLanguage(lang);
 
             // set the speed and pitch
             textToSpeech.SetPitch(.5f);
@@ -99,7 +111,7 @@ namespace TextToSpeechDemo
 
 			// clear text
 			btnClear.Click += delegate {
-				editWhatToSay.Text = "";		
+				editWhatToSay.Text = "";
 			};
 
 			// hide keyboard
@@ -139,11 +151,13 @@ namespace TextToSpeechDemo
         void TextToSpeech.IOnInitListener.OnInit(OperationResult status)
         {
             // if we get an error, default to the default language
-            if (status == OperationResult.Error)
-                textToSpeech.SetLanguage(Java.Util.Locale.Default);
+			if (status == OperationResult.Error) {
+				textToSpeech.SetLanguage (Java.Util.Locale.Uk);
+			}
             // if the listener is ok, set the lang
-            if (status == OperationResult.Success)
-                textToSpeech.SetLanguage(lang);
+			if (status == OperationResult.Success) {
+				textToSpeech.SetLanguage (lang);
+			}
         }
 
         protected override void OnActivityResult(int req, Result res, Intent data)
